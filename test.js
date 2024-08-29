@@ -1,23 +1,18 @@
-
 let dice;
 let totalScore = 0;
-let gamePlaying;
-
-
 
 const totalPoints = document.querySelector("#totalPoints");
 
-
 let diceImgs = {
-    dice1:'image/twist.jpeg',
-    dice2:'image/twist.jpeg',
-    dice3:'image/twist.jpeg',
-    dice4:'image/twist.jpeg',
-    dice5:'image/twist.jpeg',
-    dice6:'image/twist.jpeg',
-  }
+    dice1: 'image/img1.jpeg',
+    dice2: 'image/img2.jpeg',
+    dice3: 'image/img3.jpeg',
+    dice4: 'image/img4.jpeg',
+    dice5: 'image/img5.jpeg',
+    dice6: 'image/img6.jpeg',
+};
 
-  const throwDice = () => {
+const throwDice = () => {
     // 1. Generate random number  
     dice = Math.floor((Math.random() * 6) + 1);
 
